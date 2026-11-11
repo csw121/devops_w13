@@ -20,4 +20,4 @@ spec:
     spec:
       containers:
         - name: my-wbo
-          image: DOCKERHUB_ID/csw-wbo:v1
+          image: choisoungwon/csw-wbo:v1
