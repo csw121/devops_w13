@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: my-web-page
+  namespace: csw
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: my-web-page
+
+  template:
+    metadata:
+      labels:
+        app: my-web-page
+
+    spec:
+      containers:
+        - name: my-wbo
+          image: DOCKERHUB_ID/csw-wbo:v1
